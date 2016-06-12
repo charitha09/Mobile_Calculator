@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <title>My Calculator</title>
+    </head>
+    <body>
+        <div id="AppBox" class="container div-margin">
+            <div id="UserInputBox" class="form-group col-xs-12">   
+                <input type="number" id="UsrInput" name="UsrInput" placeholder="" class="form-control"/>
+            </div>
+            <div class="col-xs-12">
+                <div id="NumberButtons" class="col-xs-9 div-margin">
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_1" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_1()">1</button>
+                        <button id="nu_2" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_2()">2</button>
+                        <button id="nu_3" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_3()">3</button>
+                    </div>
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_4" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_4()">4</button>
+                        <button id="nu_5" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_5()">5</button>
+                        <button id="nu_6" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_6()">6</button>
+                    </div>
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_7" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_7()">7</button>
+                        <button id="nu_8" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_8()">8</button>
+                        <button id="nu_9" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_9()">9</button>
+                    </div>
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_0" type="button" class="btn btn-default btn-lg col-xs-8" onclick="clicknu_0()">0</button>
+                        <button id="nu_Dec" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_Dec()">.</button>
+                    </div>
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_Equ" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Equ()">=</button>
+                    </div>
+                </div>
+                <div id="MathsButtons" class="col-xs-3 div-margin">
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_Del" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Del()">&#9003</button>
+                    </div>
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_Dev" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Dev()">/</button>
+                    </div>     
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_Mul" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Mul()">*</button>
+                    </div>  
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_Sub" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Sub()">-</button>
+                    </div>  
+                    <div class="col-xs-12 div-margin">
+                        <button id="nu_Sum" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Sum()">+</button>
+                    </div>  
+                </div>
+                <div class="col-xs-12 div-margin">
+                    <button id="nu_Cle" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Cle()">Clear</button>
+                </div> 
+            </div>
+            
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

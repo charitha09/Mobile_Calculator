@@ -1,0 +1,18 @@
+#AppBox{
+    background-color: #EEEEEE;
+}
+
+.div-margin{
+    margin: 0;
+    padding: 0;
+}
+
+#UserInputBox{
+    margin-top: 25px;
+}
+
+#UserInputBox input{
+    height: 100%;
+    text-align: right;
+}
+
