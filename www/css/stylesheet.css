@@ -1,18 +1,37 @@
-#AppBox{
+body{
     background-color: #EEEEEE;
 }
 
-.div-margin{
+.navbar{
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.rmvMarPad{
     margin: 0;
     padding: 0;
 }
 
-#UserInputBox{
-    margin-top: 25px;
+#UserHistoryBox, #UserHistoryBox{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#UserInputBox input{
+#InputFields input{
     height: 100%;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    font-size: 3em;
     text-align: right;
+    background-color: #EAEAEA;
 }
 
+#KeyBoard button{
+    border-radius: 0px;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 0.2px;
+    box-shadow: none;
+    color: #888888;
+}

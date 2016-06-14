@@ -4,62 +4,64 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <title>My Calculator</title>
+        <title>Smart Calculator</title>
     </head>
     <body>
-        <div id="AppBox" class="container div-margin">
-            <div id="UserInputBox" class="form-group col-xs-12">   
-                <input type="number" id="UsrInput" name="UsrInput" placeholder="" class="form-control"/>
-            </div>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#">Calculator</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li> 
+                            <li><a href="#">Page 3</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>            
+        </header>
+        <section id="InputFields">
+            <form name="user_inputs" action="index.html" method="POST" class="rmvMarPad">
+                <div id="UserHistoryBox" class="form-group col-xs-12">   
+                    <input type="text" id="UsrHistory" name="UsrInput" disabled class="form-control"/>
+                </div>
+                <div id="UserInputBox" class="form-group col-xs-12">   
+                    <input type="text" id="UsrInput" name="UsrInput" disabled class="form-control"/>
+                </div>
+            </form>
+        </section>
+        <section id="KeyBoard">
             <div class="col-xs-12">
-                <div id="NumberButtons" class="col-xs-9 div-margin">
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_1" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_1()">1</button>
-                        <button id="nu_2" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_2()">2</button>
-                        <button id="nu_3" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_3()">3</button>
-                    </div>
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_4" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_4()">4</button>
-                        <button id="nu_5" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_5()">5</button>
-                        <button id="nu_6" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_6()">6</button>
-                    </div>
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_7" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_7()">7</button>
-                        <button id="nu_8" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_8()">8</button>
-                        <button id="nu_9" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_9()">9</button>
-                    </div>
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_0" type="button" class="btn btn-default btn-lg col-xs-8" onclick="clicknu_0()">0</button>
-                        <button id="nu_Dec" type="button" class="btn btn-default btn-lg col-xs-4" onclick="clicknu_Dec()">.</button>
-                    </div>
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_Equ" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Equ()">=</button>
-                    </div>
-                </div>
-                <div id="MathsButtons" class="col-xs-3 div-margin">
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_Del" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Del()">&#9003</button>
-                    </div>
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_Dev" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Dev()">/</button>
-                    </div>     
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_Mul" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Mul()">*</button>
-                    </div>  
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_Sub" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Sub()">-</button>
-                    </div>  
-                    <div class="col-xs-12 div-margin">
-                        <button id="nu_Sum" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Sum()">+</button>
-                    </div>  
-                </div>
-                <div class="col-xs-12 div-margin">
-                    <button id="nu_Cle" type="button" class="btn btn-default btn-lg col-xs-12" onclick="clicknu_Cle()">Clear</button>
-                </div> 
-            </div>
-            
-        </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                <button id="fn_Clear" type="button" class="btn btn-default btn-lg col-xs-6">C</button>
+                <button id="fn_Delet" type="button" class="btn btn-default btn-lg col-xs-6">&#9003</button>
+                <button id="nu_1" type="button" class="btn btn-default btn-lg col-xs-3">1</button>
+                <button id="nu_2" type="button" class="btn btn-default btn-lg col-xs-3">2</button>
+                <button id="nu_3" type="button" class="btn btn-default btn-lg col-xs-3">3</button>
+                <button id="fn_Divis" type="button" class="btn btn-default btn-lg col-xs-3">&#247</button>
+                <button id="nu_4" type="button" class="btn btn-default btn-lg col-xs-3">4</button>
+                <button id="nu_5" type="button" class="btn btn-default btn-lg col-xs-3">5</button>
+                <button id="nu_6" type="button" class="btn btn-default btn-lg col-xs-3">6</button>
+                <button id="fn_Multi" type="button" class="btn btn-default btn-lg col-xs-3">&#215</button>
+                <button id="nu_7" type="button" class="btn btn-default btn-lg col-xs-3">7</button>
+                <button id="nu_8" type="button" class="btn btn-default btn-lg col-xs-3">8</button>
+                <button id="nu_9" type="button" class="btn btn-default btn-lg col-xs-3">9</button>
+                <button id="fn_Subst" type="button" class="btn btn-default btn-lg col-xs-3">-</button>
+                <button id="nu_0" type="button" class="btn btn-default btn-lg col-xs-6">0</button>
+                <button id="fn_DecPo" type="button" class="btn btn-default btn-lg col-xs-3">.</button>
+                <button id="fn_Summa" type="button" class="btn btn-default btn-lg col-xs-3">+</button>
+                <button id="fn_Equal" type="button" class="btn btn-default btn-lg col-xs-12">=</button>
+            </div>            
+        </section>       
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>      
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
